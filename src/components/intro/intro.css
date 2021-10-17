@@ -1,0 +1,133 @@
+.intro{
+    display:flex;
+    height: 100vh;
+}
+
+.left{
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.right{
+    flex: 1;
+    position: relative;
+}
+
+.left-container{
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro-heading{
+    margin-top: 20px;
+}
+
+.intro-name{
+    color: rgb(7, 7, 211);
+    font-size: 50px;
+}
+
+.title{
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.title-container{
+    height: 100%;
+    /* text-align: center; */
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+.title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(187, 5, 233);
+    display: flex;
+    align-items: center;
+}
+.intro-scroll{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.intro-img{
+    height: 101%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.pic-bg{
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: rgb(198, 8, 223);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+@keyframes move {
+    25%{
+        transform: translateY(-50px);
+    }
+    
+    50%{
+        transform: translateY(-100px);
+    }
+    
+    75%{
+        transform: translateY(-150px);
+    }
+    
+    100%{
+        transform: translateY(-200px);
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .intro{
+        flex-direction: column;
+    }
+    .left-container{
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .intro-desc{
+        display: none;
+    }
+    .intro-name{
+        margin: 20px;
+    }
+    .title-item{
+        font-size: 25px;
+        
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1279px){
+    .intro-desc{
+        font-size: 25px;
+    }
+    .intro-img{
+        object-fit:inherit;
+    }
+    .title-item{
+        font-size: 20px;
+        
+    }
+}
+
+

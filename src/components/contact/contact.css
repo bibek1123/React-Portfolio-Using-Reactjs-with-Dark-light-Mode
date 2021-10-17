@@ -1,0 +1,148 @@
+.c {
+    height: 95vh;
+    position: relative;
+    /* display: flex; */
+  }
+  
+  .c-bg {
+    width: 20px;
+    height: 100%;
+    background-color: #ad00e2;
+    position: absolute;
+  }
+  
+  .c-wrapper {
+    padding: 50px;
+    display: flex;
+  }
+  
+  .c-left {
+    flex: 1;
+  }
+  
+  .c-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .c-title {
+    font-size: 40px;
+    width: 80%;
+  }
+  
+  .c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 70%;
+  }
+  
+  .c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .c-desc {
+    font-weight: 200;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  
+  button {
+    border: none;
+    padding: 15px;
+    background-color: #0925a1;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border:2px solid rgb(21, 255, 0);
+    border-radius: 15px;
+  }
+
+  .c-btn:hover{
+    background-color: rgb(255, 0, 0);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+  
+    .c-title {
+      font-size: 24px;
+      margin-top: 45px;
+    }
+  
+    .c-info-item {
+      margin: 20px 0px;
+      width: 100%;
+    }
+  
+    .c-desc {
+      display: none;
+    }
+  
+    form {
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    input {
+      width: 35%;
+      height: 40px;
+      margin: 10px;
+      margin-left: 0;
+    }
+  
+    button {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1279px){
+    .c-wrapper{
+      flex-direction: column;
+    }
+    .c-desc{
+      font-size: 25px;
+    }
+
+    .c-info{
+      font-size: 20px;
+    }
+    input{
+      font-size: 20px;
+    }
+    textarea{
+      font-size: 20px;
+    }
+    .c-btn{
+      font-size: 23px; 
+    }
+  }
